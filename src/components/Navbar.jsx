@@ -34,7 +34,7 @@ const Navbar = () => {
         <nav
           className={
             open
-              ? "absolute top-0 right-0 w-screen h-screen bg-[#33cca857] flex flex-col justify-evenly items-center backdrop-filter backdrop-blur-sm bg-opacity-10 p-20 transition-all text-xl"
+              ? "absolute top-0 right-0 w-screen h-screen bg-[#1f453da3] flex flex-col justify-evenly items-center backdrop-filter backdrop-blur-sm bg-opacity-10 p-20 transition-all text-xl"
               : "hidden md:flex gap-12 lg:gap-24 md:mr-4 lg:mr-8 h-10 items-center"
           }
         >
