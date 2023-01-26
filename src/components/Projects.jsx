@@ -4,7 +4,7 @@ import { AiOutlineGithub, AiOutlineEye } from "react-icons/ai";
 const Projects = () => {
   return (
     <>
-      <div className="flex justify-start items-center flex-wrap mx-6 lg:mx-40 mt-4">
+      <div className="flex justify-start items-center flex-wrap mx-6 lg:mx-40 mt-4 pb-4 border-b">
         <div className="w-full mt-8 gap-2 relative md:w-1/2 lg:w-1/3 flex flex-col justify-evenly items-center">
           <img
             className="w-[90%] h-48 object-cover rounded cursor-pointer"
