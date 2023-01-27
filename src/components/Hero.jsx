@@ -9,7 +9,6 @@ import {SiExpress} from "react-icons/si"
 
 const Hero = () => {
   let mql = window.matchMedia('(min-width: 728px)');
-  console.log(mql)
   return (
     <>
       <div className="my-12 mx-6 lg:mx-40 relative flex justify-around">
