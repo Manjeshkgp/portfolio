@@ -4,7 +4,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="w-full fixed z-[5] top-0 bg h-12 flex items-center justify-between backdrop-blur-lg">
+      <div className="w-full fixed z-[5] top-0 bg h-12 flex items-center justify-between backdrop-blur-lg md:bg-[#0a192fa9]">
         <div className="ml-4">
           <img
             src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&w=750&dpr=2"
