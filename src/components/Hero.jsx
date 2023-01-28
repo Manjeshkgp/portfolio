@@ -7,7 +7,7 @@ const About = () => {
     Aos.init({duration:1000})
   },[])
   return (
-    <div className="overflow-x-hidden">
+    <div id="hero" className="overflow-x-hidden">
       <div data-aos="fade-right" data-aos-once={true} className="flex flex-col gap-6 items-start mt-24 h-[calc(100vh-12rem)] md:h-[30vh] lg:h-[calc(100vh-12rem)] mx-6 border-b lg:mx-40">
         <p className="text-base text-[#3be6be]">Hi my name is</p>
         <p className="text-3xl font-bold lg:text-[4rem] text-[#ccd6f6] lg:my-2">Manjesh Kumar Sharma</p>

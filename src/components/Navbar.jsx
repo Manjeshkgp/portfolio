@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import logo from "../Assests/PortfolioLogo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -7,11 +8,20 @@ const Navbar = () => {
     <>
       <div className="w-full fixed z-[5] top-0 bg h-12 flex items-center justify-between backdrop-blur-lg md:bg-[#0a192fa9]">
         <div className="ml-4">
-          <img
-            src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&w=750&dpr=2"
-            className="w-10 h-10 object-cover"
+          <Link
+          onClick={()=>setOpen(false)}
+          activeClass="active"
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          ><img
+            src={`${logo}`}
+            className="w-12 h-12 object-cover"
             alt=""
-          />
+          /></Link>
+          
         </div>
         <div
           onClick={() => {
@@ -102,7 +112,7 @@ const Navbar = () => {
           </div>
           <div>
             <button className="p-1 rounded bg-[#239066] cursor-pointer hover:bg-[#3be6be] hover:text-gray-700 text-gray-300">
-              Resume
+             <a href="https://drive.google.com/file/d/1_lacsB03ZbIWgyjA8m928_kKhf8Qk8Wm/view?usp=sharing">Resume</a>
             </button>
           </div>
         </nav>
