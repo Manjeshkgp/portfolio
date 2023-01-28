@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSectionImg from "../Assests/HeroSectionImg.jpg";
 import { BsStackOverflow } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
@@ -6,12 +6,17 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 import {DiMongodb} from "react-icons/di"
 import {GoMail} from "react-icons/go"
 import {SiExpress} from "react-icons/si"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
   let mql = window.matchMedia('(min-width: 728px)');
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   return (
-    <>
-      <div className="my-12 mx-6 lg:mx-40 relative flex justify-around">
+    <div className="overflow-x-hidden">
+      <div data-aos="zoom-in" className="my-12 mx-6 lg:mx-40 relative flex justify-around">
         <div className="grid justify-center">
           <p className="text-base lg:text-xl font-semibold">Social</p>
           <a href="https://stackoverflow.com/users/19296050/manjesh-kumar-sharma" className="text-center">
@@ -51,7 +56,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="my-2 pb-6 flex mx-6 lg:mx-40 border-b text-center">
+      <div data-aos="zoom-in" className="my-2 pb-6 flex mx-6 lg:mx-40 border-b text-center">
         <p className="mx-10">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,
           dolorum laudantium! Consectetur quae est repellat quos asperiores
@@ -61,7 +66,7 @@ const Hero = () => {
           aliquam, sapiente voluptates dolore quam dicta laboriosam.
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

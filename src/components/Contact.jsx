@@ -1,5 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -9,9 +11,13 @@ const Contact = () => {
     message: "",
   };
   const [fullmsg, setFullmsg] = useState(initialMsg);
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   return (
-    <>
+    <div className="overflow-x-hidden">
       <form
+      data-aos="fade-up"
       ref={formRef}
         className="my-12 flex flex-col mx-6 lg:mx-40 items-center justify-around"
         onSubmit={(e) => {
@@ -76,7 +82,7 @@ const Contact = () => {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

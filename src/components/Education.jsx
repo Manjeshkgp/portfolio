@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Education = () => {
-  return (<>
-    <div className="flex flex-col gap-6 lg:gap-2 items-end mt-12 h-[calc(100vh-12rem)] md:h-[38vh] lg:h-[calc(100vh-12rem)] mx-6 border-b lg:mx-40">
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
+  return (<div className="overflow-x-hidden">
+    <div data-aos="fade-left" className="flex flex-col gap-6 lg:gap-2 items-end mt-12 h-[calc(100vh-12rem)] md:h-[38vh] lg:h-[calc(100vh-12rem)] mx-6 border-b lg:mx-40">
         <p className="text-base text-[#3be6be]">Higher Secondary Education from KSSHS</p>
         <p className="text-3xl font-bold lg:text-[4rem] text-[#ccd6f6] lg:my-2 text-right">Science Stream, 2022</p>
         <p className="text-base text-[#7c839c] lg:w-1/2 lg:my-2">
@@ -14,7 +19,7 @@ const Education = () => {
           Passed with an overall of 79.8% in Grade 10. I studied a mixture of almost 8 to 10 subjects including 2 languages (Hindi & English).
         </p>
       </div>
-  </>)
+  </div>)
 }
 
 export default Education;

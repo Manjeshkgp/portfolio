@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineGithub, AiOutlineEye } from "react-icons/ai";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <>
-      <div className="flex justify-start items-center flex-wrap mx-6 lg:mx-40 mt-4 pb-4 border-b">
+    <div className="overflow-x-hidden">
+      <div
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-duration="800"
+        className="flex justify-start items-center flex-wrap mx-6 lg:mx-40 mt-4 pb-4 border-b"
+      >
         <div className="w-full mt-8 gap-2 relative md:w-1/2 lg:w-1/3 flex hover:bg-[#239066] hover:-translate-y-1 hover:transition-all transition-all flex-col justify-evenly rounded py-4 items-center">
           <img
             className="w-[90%] h-48 object-cover rounded cursor-pointer"
@@ -110,7 +120,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
