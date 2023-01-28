@@ -15,7 +15,7 @@ const Contact = () => {
     Aos.init({duration:1000})
   },[])
   return (
-    <div className="overflow-x-hidden">
+    <div id="contact" className="overflow-x-hidden">
       <form
       data-aos="fade-up"
       ref={formRef}

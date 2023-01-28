@@ -6,7 +6,7 @@ const Education = () => {
   useEffect(()=>{
     Aos.init({duration:1000})
   },[])
-  return (<div className="overflow-x-hidden">
+  return (<div id='education' className="overflow-x-hidden">
     <div data-aos="fade-left" className="flex flex-col gap-6 lg:gap-2 items-end mt-12 h-[calc(100vh-12rem)] md:h-[38vh] lg:h-[calc(100vh-12rem)] mx-6 border-b lg:mx-40">
         <p className="text-base text-[#3be6be]">Higher Secondary Education from KSSHS</p>
         <p className="text-3xl font-bold lg:text-[4rem] text-[#ccd6f6] lg:my-2 text-right">Science Stream, 2022</p>

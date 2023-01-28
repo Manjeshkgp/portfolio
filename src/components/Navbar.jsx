@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -32,6 +33,7 @@ const Navbar = () => {
           )}
         </div>
         <nav
+        onClick={()=>setOpen(false)}
           className={
             open
               ? "absolute top-0 right-0 w-screen h-screen bg-[#1f453da3] flex flex-col justify-evenly items-center backdrop-filter backdrop-blur-sm bg-opacity-10 p-20 transition-all text-xl"
@@ -39,24 +41,64 @@ const Navbar = () => {
           }
         >
           <div>
-            <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
-              About
-            </p>
+            <Link
+            onClick={()=>setOpen(false)}
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
+                About
+              </p>
+            </Link>
           </div>
           <div>
-            <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
-              Education
-            </p>
+            <Link
+            onClick={()=>setOpen(false)}
+              activeClass="active"
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
+                Education
+              </p>
+            </Link>
           </div>
           <div>
-            <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
-              Projects
-            </p>
+            <Link
+            onClick={()=>setOpen(false)}
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
+                Projects
+              </p>
+            </Link>
           </div>
           <div>
-            <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
-              Contact
-            </p>
+            <Link
+            onClick={()=>setOpen(false)}
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <p className="text-[#3be6be] cursor-pointer hover:text-gray-300">
+                Contact
+              </p>
+            </Link>
           </div>
           <div>
             <button className="p-1 rounded bg-[#239066] cursor-pointer hover:bg-[#3be6be] hover:text-gray-700 text-gray-300">

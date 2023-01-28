@@ -8,7 +8,7 @@ const Projects = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="overflow-x-hidden">
+    <div id="projects" className="overflow-x-hidden">
       <div
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
