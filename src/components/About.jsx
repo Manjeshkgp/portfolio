@@ -8,14 +8,16 @@ import { GoMail } from "react-icons/go";
 import { SiExpress } from "react-icons/si";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import data from "../Assests/ProjectsData.json"
 
 const Hero = () => {
+  console.log(data)
   let mql = window.matchMedia("(min-width: 728px)");
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div id="about" className="overflow-x-hidden">
+    <div id="about" className="overflow-hidden">
       <div
         data-aos="zoom-in"
         className="my-12 mx-6 lg:mx-40 relative flex justify-around"

@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Netflix Clone",
+        "techStack":["ReactJS","Firebase","TailwindCSS","TMDB Api"],
+        "githubLink":"https://github.com/Manjeshkgp/Netflix-Clone",
+        "liveLink":"https://netflix-clone-manjesh.web.app/",
+        "description":"This is a Netflix Clone made using the above techonologies. You can see the top trending, horror, latest movies and web series via this application. You can also save some of the movies in your account to watch them later. This app supports signup and login through email, it also supports authentication using Firebase. In this project I haven't created the backend, I only created the Frontend. I'm also thinking to add some more important features in this project.",
+        "imgLink":"https://i.ibb.co/ZJfbQTv/Screenshot-13.png"
+    },
+    {
+        "name":"Instagram Clone (under construction)",
+        "techStack":["MongoDB","ExpressJS","ReactJS","NodeJS","TailwindCSS","SocketIO","PassportJS"],
+        "githubLink":"https://github.com/Manjeshkgp/mern-social",
+        "liveLink":"https://mern-social-frontend.pages.dev/",
+        "description":"Imagegram is a comprehensive, full-stack Instagram clone with numerous features including image uploads, commenting, likes, user search, email login, and JWT authentication. I am currently working on integrating SocketIO for the messaging feature, I already added this in the likes feature. Although the app has been deployed on a server without websocket support, leading to slower performance, I am actively working to resolve the issue.",
+        "imgLink":"https://i.ibb.co/Vmdxsdm/Screenshot-12.png" 
+    },
+    {
+        "name":"Portfolio",
+        "techStack":["ReactJS","EmailJS","TailwindCSS","Animation On Scroll"],
+        "githubLink":"https://github.com/Manjeshkgp/portfolio",
+        "liveLink":"",
+        "description":"My Portfolio Website showcases my abilities, education, projects and some personal information. The majority of the work was on using TailwindCSS when I was creating this website, with only a litlle bit of efforts in ReactJS. This application is also connected to emailJS, enabling me to receive messages from recruiters or anyone who wishes to connect with me.",
+        "imgLink":"https://i.ibb.co/CQm8mv8/Screenshot-14.png"
+    }
+]

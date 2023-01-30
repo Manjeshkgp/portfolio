@@ -7,7 +7,7 @@ const About = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div id="hero" className="overflow-x-hidden">
+    <div id="hero" className="overflow-hidden">
       <div
         data-aos="fade-right"
         data-aos-once={true}
