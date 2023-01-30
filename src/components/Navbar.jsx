@@ -112,7 +112,7 @@ const Navbar = () => {
           </div>
           <div>
             <button className="p-1 rounded bg-[#239066] cursor-pointer hover:bg-[#3be6be] hover:text-gray-700 text-gray-300">
-             <a href="https://drive.google.com/file/d/1_lacsB03ZbIWgyjA8m928_kKhf8Qk8Wm/view?usp=sharing">Resume</a>
+             <a href="https://drive.google.com/file/d/1tsIde2W9c6ThJGgOOX09V8RUNeMuIKlH/view?usp=sharing">Resume</a>
             </button>
           </div>
         </nav>
